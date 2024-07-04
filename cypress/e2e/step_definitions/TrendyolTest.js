@@ -11,14 +11,6 @@ Given("{string} sayfasina gidilir", (urlKey) => {
   commonActions.navigateToURL(urlKey);
 });
 
-When('Kullanıcı ilk iki ürünü sırayla sepete ekler', () => {
-  commonActions.addFirstTwoRecommendedItemsToCart();
-});
-
-When('Kullanıcı "Sepetim" sayfasına gider', () => {
-  commonActions.goToCart();
-});
-
 Then("beklenir", () => {
   commonActions.waitt();
 });
